@@ -1,1 +1,16 @@
-build
+name: Build Pipeline
+
+on:
+    pull_request:
+        branches: [ main ]
+    workflow_dispatch:
+
+
+jobs:
+    - name: job test name    
+      build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout code
+            uses: action/checkout@v4
+
