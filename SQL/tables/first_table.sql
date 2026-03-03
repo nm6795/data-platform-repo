@@ -1,0 +1,1 @@
+create table first_table (id int, name nvarchar(100))
